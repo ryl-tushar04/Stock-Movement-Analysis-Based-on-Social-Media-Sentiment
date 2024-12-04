@@ -7,13 +7,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score
 import matplotlib.pyplot as plt
 import seaborn as sns
+import config
 
 # Initialize Reddit API
 reddit = praw.Reddit(
-    client_id="5AZTKVKD7hJyWhIe6iD-4g",  # Replace with your client ID
-    client_secret="k9J6YVJUrE4X2wBtLCJjbTZvXk84rw", # Replace with your client secret
-    user_agent="stock_analysis",        # Replace with your user agent
-)
+client_id=config.REDDIT_CLIENT_ID,
+    client_secret=config.REDDIT_CLIENT_SECRET,
+    user_agent=config.REDDIT_USER_AGENT,      )
 
 # Scraping function
 def scrape_reddit(subreddit_name, keyword, limit=100):
