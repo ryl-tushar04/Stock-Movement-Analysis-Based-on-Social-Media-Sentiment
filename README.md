@@ -82,7 +82,7 @@ This project aims to predict stock price movements by analyzing sentiment from u
  #### How this works:
  1. The sensitive credentials (Reddit client ID, client secret, and user agent) are stored securely in `config.py`.
  2. `DataScraping.py` imports these credentials from `config.py` to initialize the Reddit API connection, keeping the sensitive information separate from the main logic.
- 3. Now, if you need to update the credentials, you can do so in `config.py` without having to modify the main script.
+ 3. Now, if you need to update the credentials, you can do so in `config.py` without modifying the main script.
     
 
 ----------
@@ -105,7 +105,7 @@ This project aims to predict stock price movements by analyzing sentiment from u
     
 ## **Jupyter Notebooks**
 
-In addition to the Python scripts, I have uploaded Jupyter notebooks that contain the same code. The notebooks provide an interactive environment for running the code step-by-step, and they also contain additional explanations and visualizations for better understanding. You can find the notebooks in the repository under the `Notebooks` folder.
+In addition to the Python scripts, I have uploaded Jupyter notebooks that contain the same code. The notebooks provide an interactive environment for running the code step-by-step, and they also contain additional explanations and visualizations for better understanding. The notebooks are in the repository under the `notebook.ipynb` folder.
 
 
 
