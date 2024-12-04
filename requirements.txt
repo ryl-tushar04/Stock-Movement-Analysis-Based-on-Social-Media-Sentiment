@@ -1,0 +1,6 @@
+praw
+pandas
+nltk
+scikit-learn
+matplotlib
+seaborn
