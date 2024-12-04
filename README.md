@@ -94,7 +94,7 @@ This project aims to predict stock price movements by analyzing sentiment from u
  -  **DataScraping.py**
     
     
-          1. This will scrape Reddit comments and save the data in.
+          1. This will scrape Reddit comments and save the data.
           
           2. Generates sentiment scores and prepares the data for modeling.
           
@@ -105,7 +105,7 @@ This project aims to predict stock price movements by analyzing sentiment from u
     
 ## **Jupyter Notebooks**
 
-In addition to the Python scripts, I have uploaded Jupyter notebooks that contains the same code. The notebooks provide an interactive environment for running the code step-by-step, and they also contain additional explanations and visualizations for better understanding. You can find the notebooks in the repository under the Notebooks/ folder.
+In addition to the Python scripts, I have uploaded Jupyter notebooks that contain the same code. The notebooks provide an interactive environment for running the code step-by-step, and they also contain additional explanations and visualizations for better understanding. You can find the notebooks in the repository under the `Notebooks` folder.
 
 
 
