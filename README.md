@@ -136,6 +136,9 @@ movement.
 
 ### **Example Visualization**
 
+![Screenshot 2024-12-05 011719](https://github.com/user-attachments/assets/4e5fd21d-0526-4a7a-a9cd-3519af517219)
+
+
 ----------
 
 ## **Future Enhancements**
