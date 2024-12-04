@@ -67,6 +67,10 @@ This project aims to predict stock price movements by analyzing sentiment from u
 
     
     `pip install -r requirements.txt` 
+    If you prefer manual installation, you can install the libraries individually:
+
+
+    `pip install praw pandas nltk scikit-learn matplotlib seaborn`
     
 4.  Add your Reddit API credentials to `config.py`:
     
@@ -74,7 +78,8 @@ This project aims to predict stock price movements by analyzing sentiment from u
     
     `client_id = "your_client_id"
     client_secret = "your_client_secret"
-    user_agent = "your_user_agent"` 
+    user_agent = "your_user_agent"`
+    You do not need to provide your own Reddit API credentials. I have already added the CLIENT_ID, CLIENT_SECRET, and USER_AGENT in the code for you. 
     
 
 ----------
