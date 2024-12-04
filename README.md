@@ -79,6 +79,10 @@ This project aims to predict stock price movements by analyzing sentiment from u
     `client_id = "your_client_id"
     client_secret = "your_client_secret"
     user_agent = "your_user_agent"`
+ ### How this works:
+ 1. The sensitive credentials (Reddit client ID, client secret, and user agent) are stored securely in `config.py`.
+ 2. `DataScraping.py` imports these credentials from `config.py` to initialize the Reddit API connection, keeping the sensitive information separate from the main logic.
+ 3. Now, if you need to update the credentials, you can do so in `config.py` without having to modify the main script.
     
 
 ----------
