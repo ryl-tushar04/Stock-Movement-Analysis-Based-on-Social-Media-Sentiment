@@ -30,7 +30,7 @@ def scrape_reddit(subreddit_name, keyword, limit=100):
     return pd.DataFrame(posts)
 
 # Scrape data from Reddit
-df = scrape_reddit("wallstreetbets", "stocks", limit=500)  # Example: Scrape 'r/wallstreetbets' for keyword "stocks"
+df = scrape_reddit("wallstreetbets", "AAPL", limit=500)  # Example: Scrape 'r/wallstreetbets' for keyword "stocks"
 df['created_date'] = pd.to_datetime(df['created_utc'], unit='s')
 
 # Save raw data for reference
@@ -83,12 +83,37 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 importances = model.feature_importances_
 feature_names = X.columns
 
-# Visualization: Sentiment Distribution
-sns.countplot(df['sentiment_category'])
-plt.title("Sentiment Distribution")
-plt.show()
+# Visualization: Sentiment Distribution And Feature Importance
+plt.figure(figsize=(8, 6))
+sns.countplot(data=df, x='sentiment_category', palette='viridis')
+plt.title("Sentiment Distribution of Reddit Posts", fontsize=16, weight='bold')
+plt.xlabel("Sentiment Category", fontsize=14)
+plt.ylabel("Count", fontsize=14)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+for bar in plt.gca().patches:
+    plt.gca().text(
+        bar.get_x() + bar.get_width() / 2,
+        bar.get_height() + 3,
+        int(bar.get_height()),
+        ha='center', va='bottom', fontsize=12
+    )
 
-# Visualization: Feature Importance
-sns.barplot(x=importances, y=feature_names)
-plt.title("Feature Importance")
+importances_sorted_indices = importances.argsort()
+sorted_feature_names = feature_names[importances_sorted_indices]
+sorted_importances = importances[importances_sorted_indices]
+
+plt.figure(figsize=(8, 6))
+sns.barplot(x=sorted_importances, y=sorted_feature_names, palette='crest')
+plt.title("Feature Importance (Random Forest)", fontsize=16, weight='bold')
+plt.xlabel("Importance", fontsize=14)
+plt.ylabel("Feature", fontsize=14)
+plt.grid(axis='x', linestyle='--', alpha=0.7)
+for i, importance in enumerate(sorted_importances):
+    plt.gca().text(
+        importance + 0.01,
+        i,
+        f"{importance:.2f}",
+        va='center', fontsize=12
+    )
+
 plt.show()
