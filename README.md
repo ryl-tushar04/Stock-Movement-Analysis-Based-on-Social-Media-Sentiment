@@ -149,9 +149,12 @@ movement.
 
 
 
-### **Example Visualization**
+### **Visualization**
+**1. Sentiment Distribution Visualization**
+![image](https://github.com/user-attachments/assets/13354997-c5b2-4ade-971d-e8df9878f8fa)
 
-![Screenshot 2024-12-05 011719](https://github.com/user-attachments/assets/4e5fd21d-0526-4a7a-a9cd-3519af517219)
+**2. Feature Importance Visualization**
+![image](https://github.com/user-attachments/assets/15202c75-c9e8-4546-af4c-03380e18db3d)
 
 
 ----------
