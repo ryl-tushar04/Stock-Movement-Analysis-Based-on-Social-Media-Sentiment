@@ -1,4 +1,4 @@
 # Reddit API Credentials
-client_id = "5AZTKVKD7hJyWhIe6iD-4g"
-client_secret = "k9J6YVJUrE4X2wBtLCJjbTZvXk84rw"
+client_id = "JOiF4S62QEMAOAdsE3nPKQ"
+client_secret = "LmeNaYUgBy42e227olLRetct9UTbiA"
 user_agent = "stock_analysis"
