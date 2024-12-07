@@ -198,6 +198,6 @@ Tushar Saxena
 
 
 
-![LinkedIn](https://github.com/user-attachments/assets/83d2f006-d33b-4994-9f1c-45757ba37462)
+[![LinkedIn](https://github.com/user-attachments/assets/83d2f006-d33b-4994-9f1c-45757ba37462)](www.linkedin.com/in/tushar-saxena0410)
 
 ----------
