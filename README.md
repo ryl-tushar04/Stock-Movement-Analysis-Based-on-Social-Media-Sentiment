@@ -195,5 +195,6 @@ Contributions are welcome! Please follow these steps:
 ### **Author**
 
 Tushar Saxena
+![LinkedIn](https://github.com/user-attachments/assets/83d2f006-d33b-4994-9f1c-45757ba37462)
 
 ----------
